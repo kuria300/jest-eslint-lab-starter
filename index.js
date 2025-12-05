@@ -19,6 +19,7 @@ function filterActiveUsers(users) {
     return users.filter(user => user.isActive);
 }
 
+
 /**
  * Logs an action performed by a user with a timestamp.
  * @param {string} action - The action performed.
@@ -29,5 +30,7 @@ function logAction(action, username) {
     const timestamp = new Date().toISOString();
     return `User ${username} performed ${action} at ${timestamp}`;
 }
+
+
 
 module.exports = { capitalizeWords, filterActiveUsers, logAction };
