@@ -27,8 +27,8 @@ function filterActiveUsers(users) {
  * @returns {string} - The log message.
  */
 function logAction(action, username) {
-    const timestamp = new Date().toISOString();
-    return `User ${username} performed ${action} at ${timestamp}`;
+    const timestamp = new Date().toISOString().slice(0,19);
+    return `User ${username} performed ${action} action at ${timestamp}`;
 }
 
 
